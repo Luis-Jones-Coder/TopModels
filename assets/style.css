@@ -366,3 +366,99 @@ h2 {
    -webkit-filter:  grayscale(0);
    -webkit-transform:  scale(1.0);
 }
+
+
+/*  Form Section */ 
+
+/* Uses "background-size: cover" to ensure the background image fully covers the element without distortion, cropping if necessary.
+    Applies "object-fit: cover" for compatibility and to maintain the image's aspect ratio while filling the container.*/
+.body{
+    background: url(images/portrait-handsome-fashion-stylish-hipster-model-dressed-warm-overcoat-posing-studio.jpg);
+    background-size: cover;
+    object-fit: cover;
+}
+
+/* Sets the background color to a semi-transparent
+     Applies a border radius of 10px to round the corners, giving a softer look.
+     Adds an inset box shadow with white color and offsets of -2px horizontally and 2px vertically, creating a subtle inner glow effect. */
+.form-container{
+    background: rgb(0,0,0, 0.5);
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+}
+
+/* Sets font-size 
+    title color fonts to white against the transparent backgrond */
+.form-title {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+
+/* Sets the text color to white (#fff) for good contrast and readability.
+     Defines the font size as 20px, making the labels easily legible.
+     Assigns a font weight of 400 (normal), ensuring the text is neither too bold nor too light */
+form label  {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Styles for the .form-btn class:
+     Sets the font size to 20px, ensuring the button text is clearly visible.
+     Changes the text color to white (#fff), providing good contrast.
+     Assigns a font weight of 500 (medium), making the text slightly bold for emphasis.
+     Adds a smooth transition effect (0.5 seconds) to all properties, enhancing interactivity when the button's appearance changes */
+.form-btn {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.5s ease
+}
+ /* Set the colors oposite to create the animation when mouse is hover */
+.form-btn:hover {
+    color: #24262b;
+    background-color: #fff;
+}
+
+
+
+.gender-category label,
+.gender-category input,
+ .form-sumbmit-btn input{
+    cursor: pointer;
+}
+
+/* Responsive */
+
+/*  */
+@media(max-width:574px){
+    .footer-col {
+        width: 100%;
+    }
+}
+/*  */
+@media(max-width: 767px){
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+        
+    }
+
+    /* Gallery section */
+    .gallery {
+        flex-direction: column;
+    }
+    
+
+}
+
+@media(max-width: 991px){
+    .sidebar{
+        background-color: rgb(255,255,255, 0.25);
+        backdrop-filter: blur(10px);
+    }
+}

@@ -94,3 +94,24 @@ h2 {
     right: 20px; 
     margin-right: 2rem;
 }
+
+/* Carousel section */
+
+/* Giving some bottom spaces to the first h1 inside the carousel section */
+#carousel > h1{
+    margin-bottom: 4rem;
+
+}
+/* Giving height size to the images inside the carousel */
+.c-item {
+    height: 450px;
+    object-fit: cover;
+
+
+}
+/* Making the images in the carousel take up 100% of their capacity */
+.c-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

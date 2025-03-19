@@ -98,8 +98,9 @@ h2 {
 /* Carousel section */
 
 /* Giving some bottom spaces to the first h1 inside the carousel section */
-#carousel > h1{
+#carousel > h1, #services .row h2{
     margin-bottom: 4rem;
+    font-weight:600;
 
 }
 /* Giving height size to the images inside the carousel */
@@ -180,4 +181,104 @@ h2 {
     font-weight: 500;
 }
 
+/* footer section */
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+}
+ 
+.footer .container{
+    
+    max-width: 1170px;
+    margin: auto;
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .container ul {
+    list-style: none;
+}
+.footer-col { 
+    width: 25%;
+    padding: 0 15px;
+}
+/* Styling the h4 */
+.footer-col h4 {
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+
+}
+/* Making a bottom red line */
+.footer-col h4::before {
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+/* Giving all elements of the list a margin button except the last element of each list  */
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+ /* Styling the list a  */
+ /* display: block: Ensures the element behaves as a block-level element, taking up the full width available.
+    transition: all 0.3s ease`: Adds a smooth transition effect to all CSS property changes, lasting 0.3 seconds, with an easing function for a natural and gradual effect. */
+.footer-col ul li  {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+ /* Changes the text color to white (#fff) on hover.
+     Adds a left padding of 10px to create a slight "shift" effect when hovering.
+     Changes the cursor to a pointer to indicate the element is interactive (clickable)*/
+.footer-col ul li:hover {
+    color: #fff;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+/* Sets the element to display as an inline-block, giving it block-like behavior with inline positioning.
+     Fixes the dimensions to 40px by 40px, ensuring a consistent circular shape.
+     Applies a semi-transparent background color (rgba with 20% opacity).
+     Adds spacing around the elements with a margin: 10px right and bottom.
+     Centers the text horizontally and vertically using text-align and line-height.
+     Rounds the corners completely with a border-radius of 50%, creating a circular appearanc*/
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+/* Changes the text color to a dark gray shade (#24262b) to indicate interactivity.
+     Sets the background color to solid white (#fff) to create a contrasting visual effect.
+     Combined with the transition effect defined earlier, these changes occur smoothly, enhancing the user experience.*/
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #fff;
+}
 

@@ -16,6 +16,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Buttons */
+
+/*Sets a 2-pixel solid border with a color defined by the CSS variable (--highlight-color).
+     Applies a background color using the same variable (--highlight-color) for a cohesive design.
+     Changes the text color to white, ensuring good contrast and readability against the background */
+.custom-button-filled {
+    border: 2px solid var(--highlight-color);
+    background-color: var(--highlight-color);
+    color: white;
+}
+
+.custom-button-filled:hover {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.custom-button-outline {
+    border: 3px solid var(--highlight-color);
+    padding: 7px 25px;
+    color: var(--highlight-color)
+}
+
+.custom-button-outline:hover {
+    background-color: var(--highlight-color);
+    color: white
+}
 body {
     font-family: var(--primary-font);  
 }

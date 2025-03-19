@@ -66,3 +66,31 @@ h2 {
     background-color: #fff;
     color: #24262b;
 }
+
+/* Hero section */
+/* Andding 100% width to make it resposive so image always take the full width screen.*/
+/* Adding image background to the hero section */
+#hero{
+    height: 600px;
+    width: 100%;
+    background: url(images/bohemian-8722478_1920\ \(1\).png) no-repeat center center/cover;
+    position: relative;
+    margin-bottom: 4rem;
+    object-fit: cover;
+
+      
+}
+/* Styling the text on the image hero section*/
+.hero-text {
+    color: #3a522f;
+    font-weight: 900;
+   
+}
+/* Giving some space and background color to make it visible */
+#cover-text{
+    background-color: rgb(255,255,255, 0.25);
+    position: absolute; 
+    bottom: 30px;
+    right: 20px; 
+    margin-right: 2rem;
+}

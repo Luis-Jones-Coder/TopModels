@@ -59,22 +59,6 @@ Develop a professional website for the modeling agency that effectively showcase
 - Content was reviewed and edited for clarity, conciseness, and SEO optimization.
 - Descriptions were directly integrated into the website’s HTML.
 
-### Tools Used
-[**Flexbox**](Flexbox)
-- Flexbox makes it easy to create flexible and responsive layouts.
-
-[**HTML5**](https://www.w3schools.com/html/html_intro.asp)
-- Was used to structure the web page  
-[**Google Fonts**](https://fonts.google.com/)
-- Google font was used for the font of the website.
-
-
-
-
-
-
-
-
 
 ### Deployment
 **1. Code Review:** Ensured all code is clean, error-free, and well-documented.
@@ -136,7 +120,11 @@ Conclusion:
 The issue with the navigation bar has been successfully resolved. Adding the col-12 class ensures a responsive and user-friendly interface across devices, significantly improving the overall user experience.
 
 **HTML validator WRC**
-I have used the recommended css [validator WRC](https://jigsaw.w3.org/css-validator/#validate_by_input) to validate all of my css files.
+I have used the recommended html [validator WRC](assets\images\index-solution.png) to validate all of my html files.
+[validator WRC](assets\images\formSucces.png) Form.html
+[validator WRC](assets\images\galleriSuccess.png) Gallery.html
+[validator WRC](assets\images\Success-corrected.png) Success.html
+
 
 **CSS validator WRC**
 I have used the recommended html [validator WRC](https://validator.w3.org/#validate_by_input) to validate all of my html files.
@@ -147,9 +135,9 @@ Functional Testing: Tested all critical functionalities (forms,links, responsive
 
 Monitoring: Set up monitoring tools to ensure the site is available and functioning correctly at all times (e.g., Google Analytics, UptimeRobot).
 
+
 ## Acknowledgements
 
-- [**Pixabay:**](https://pixabay.com/) For providing high-quality, free stock images.
-- [**Bootstrap:**](https://getbootstrap.com/) For offering a robust framework that simplifies the development of responsive websites.
-- [**Fontawesome:**](https://fontawesome.com/kits) The extensive library of icons and the ease of integration significantly enhanced the visual appeal and functionality of our site.
-- [**Google Fonts**](https://fonts.google.com/) For providing an amazing collection of fonts that made our website look stunning and professional
+- I would like to thank my Code Institute mentor, Dickv for their support throughout the development of this project.
+
+- I would like to thank the Code Institute tutor team for their assistance with troubleshooting and debugging some project issues.

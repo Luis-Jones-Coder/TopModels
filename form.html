@@ -64,7 +64,50 @@
     <header>
      
     <main>
-       
+        <main >
+            <!-- form container -->
+            <section id="booking-form" class="container section ">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-8 form-container">
+                        <h2 class="form-title ">Join Us</h2>
+                        <!-- action is used to take user to the file succes.hml when is submeted correctly -->
+                        <form action="success.html" method="GET" >
+                            <div class="row">
+                                <div class="col-12 col-lg-6 mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input class="form-control" id="name" name="name" type="text" required>
+                                </div>
+                                <div class="col-12 col-lg-6 mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input class="form-control" id="email" name="email" type="email" required>
+                                </div>
+                                <div class="col-12 col-lg-6 mb-3">
+                                    <label for="phone" class="form-label">Phone number</label>
+                                    <input class="form-control" id="phone" name="phone" type="text" required>
+                                </div>
+                                <div class="col-12 col-lg-6 mb-3">
+                                    <label for="event-type" class="form-label">Event type</label>
+                                    <select id="event-type" class="form-select" name="event-type" required>
+                                        <option value="" selected>Options</option>
+                                        <option value="regular-play">Mens Session</option>
+                                        <option value="dnd">Womens Session</option>
+                                        <option value="retro-night">Kids Session</option>
+                                        <option value="tournament">Portfolio</option>
+                                        
+                                    </select>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" rows="6" id="message" name="message" required></textarea>
+                                </div>
+                            </div>
+    
+                            <button type="submit" class="btn form-btn mb-4 col-12 col-lg-3 justify-content-center align-items-center">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
   </main>
    <!-- Footer / contact section -->
     <!-- mt-auto added to push footer to the bottom of the page -->

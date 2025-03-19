@@ -1,6 +1,7 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* CSS Variables */
+/* Creating customize colors and fonts to easy acces when need it  */
 :root {
     --primary-font: "Inter", sans-serif;
     --secondary-font: "Gantari", cursive;
@@ -9,20 +10,22 @@
     
 }
 /* Global styles */
+/* Removing eny default spaces and the box-sizing is to make it more resposive */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    font-family: var(--primary-font);
-    
+    font-family: var(--primary-font);  
 }
 
+/* Giving it space to separate it from the other sections */
 main {
     margin-top: 6rem;
     margin-bottom: 3rem;
 }
+
 h1,
 h2,
 h3 {
@@ -30,15 +33,36 @@ h3 {
     color: var(--primary-color);
 }
 
+/* Making the letters inside h1 and h2 uppercase */
 h1,
 h2 {
     text-transform: uppercase;
 }
-
+/* Add some bottom spaces to all h2 */
 h2 {
     margin-bottom: 2rem;
 }
 
 .sub-heading-color {
     color: var(--highlight-color);
+}
+
+/* Navar section */
+
+/* Adding a background color an make giving the position */
+#navbar {
+    background-color: #24262b;
+    position: absolute; 
+}
+
+/* Adding a general botton style adding a transition to make it look smooth when the mouse hovers over it */
+.join-btn {
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+    transition: all 0.5s ease
+}
+/* Change color oposite when the mouse is over */
+.join-btn:hover {
+    background-color: #fff;
+    color: #24262b;
 }

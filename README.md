@@ -8,8 +8,35 @@
 ### General Objective
 Develop a professional website for the modeling agency that effectively showcases models, previous work, and services offered, facilitating connections between potential clients and the agency.
 
+### Technologies Used
 
-### Specific Objectives
+[**Flexbox**](Flexbox)
+- Flexbox makes it easy to create flexible and responsive layouts.
+
+[**HTML5**](https://www.w3schools.com/html/html_intro.asp)
+- Was used to structure the web page  
+
+[**Google Fonts**](https://fonts.google.com/)
+- Google font was used for the font of the website.
+
+[**Custom CSS**](https://www.w3schools.com/css/)
+- Was added to override default Bootstrap styles and match the client’s branding.
+
+[**Fontawesome**](https://fontawesome.com/kits)
+- Was added to add the icons in the page.
+
+[**Bootstrap Framework**](https://getbootstrap.com/)
+
+- The website utilizes the Bootstrap framework to ensure a responsive and modern design.
+
+- Bootstrap CSS and JavaScript files were included in the project via CDN links
+
+[**Custom CSS**](https://www.w3schools.com/css/)
+
+- Was added to override default Bootstrap styles and match the client’s branding.
+
+
+### [User Story](https://github.com/users/Luis-Jones-Coder/projects/4)
 **1. Showcase Model Portfolio:** Provide a high-quality visual gallery that highlights models who have worked with the agency and previous projects.
 
 **2. Facilitate Contact:** Include a contact form and key information sections (such as location and operating hours) so potential clients can easily get in touch with the agency.
@@ -41,28 +68,80 @@ Develop a professional website for the modeling agency that effectively showcase
 [**Google Fonts**](https://fonts.google.com/)
 - Google font was used for the font of the website.
 
-[**Bootstrap Framework**](https://getbootstrap.com/)
 
-- The website utilizes the Bootstrap framework to ensure a responsive and modern design.
 
-- Bootstrap CSS and JavaScript files were included in the project via CDN links.
 
-- Bootstrap components like the carousel and grid system were used to create an interactive and user-friendly layout.
 
-[**Custom CSS**](https://www.w3schools.com/css/)
 
-- Was added to override default Bootstrap styles and match the client’s branding.
 
-[**Fontawesome**](https://fontawesome.com/kits)
 
-- Was added to add the icons in the page.
 
 ### Deployment
 **1. Code Review:** Ensured all code is clean, error-free, and well-documented.
+### Local Testing:
+**Issue Description: JOIN US** 
+The "JOIN US" button, located at the top-right of the page, presented a visual error during mouse hover in the Gallery section and the Form section. When hovering over the button:
 
-**2. Local Testing:** Local Testing: Conducted extensive testing in a local environment to confirm all functionalities work correctly.
+- The background color changed to white, but the text color did not adjust accordingly.
 
-**3. Verifying the Deployment:** Visual Check: Browsed the deployed site to ensure it looks and works correctly.
+- This caused the button's text to become invisible, making it unreadable and disrupting the user experience.
+
+**Root Cause Analysis:**
+Both the Gallery section and the Form section had a CSS class named text-white.
+
+This class forced the text color to turn white on mouse hover, regardless of the button's background color.
+
+As a result, the content of the button became indistinguishable.
+**Resolution:**
+The issue was resolved by removing the text-white class from the sections that caused the conflict.
+
+**Before Fix:**
+Hovering over the "JOIN US" button changed its background to white while keeping the text color white, rendering the text invisible.
+
+The issue was consistently observed in both the Gallery and Form sections.
+
+**After Fix:**
+After removing the text-white class, the button text color now remains visible during hover.
+
+The button functions correctly, maintaining good contrast between the background and text.
+
+**Test Report: Navigation Bug on Small Screens**
+
+**Issue Description:**
+The navigation bar was not functioning properly on small screens. The issue was caused by the hero image, which affected the usability of the navigation bar by making it difficult to interact with on smaller devices.
+
+**Root Cause Analysis:**
+The hero image did not adapt well to smaller screen sizes, causing layout conflicts and obstructing the navigation bar.
+
+This made the navigation experience cumbersome and non-responsive.
+
+**Resolution:**
+The problem was resolved by adding the col-12 class to the hero image section.
+
+This ensured that the hero image properly spans the width of the screen on smaller devices, improving the layout and usability.
+
+**Testing Results:**
+
+**Before Fix:**
+Navigation bar was obstructed or unresponsive on small screens.
+
+User interactions with the navigation bar were inconsistent and frustrating.
+
+**After Fix:**
+Navigation bar is now fully functional on small screens.
+
+The layout adjusts seamlessly, and the hero image no longer interferes with navigation.
+
+Conclusion:
+The issue with the navigation bar has been successfully resolved. Adding the col-12 class ensures a responsive and user-friendly interface across devices, significantly improving the overall user experience.
+
+**HTML validator WRC**
+I have used the recommended css [validator WRC](https://jigsaw.w3.org/css-validator/#validate_by_input) to validate all of my css files.
+
+**CSS validator WRC**
+I have used the recommended html [validator WRC](https://validator.w3.org/#validate_by_input) to validate all of my html files.
+
+
 
 Functional Testing: Tested all critical functionalities (forms,links, responsive fuctionality) to confirm they work as expected.
 

@@ -309,3 +309,60 @@ h2 {
     background-color: #fff;
 }
 
+/* Gallery section */
+
+/* Sets a maximum width of 1224px to prevent the container from exceeding this size, maintaining a responsive design.
+     Defines the width as 90% of the viewport, ensuring it adapts to different screen sizes.
+     Centers the container horizontally using "margin: auto"*/
+.containerg {
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+
+/*  Sets the display mode to Flexbox using "display: flex", allowing the direct children of the gallery to align in a flexible layout.
+    Adds a 40px gap between the children elements, ensuring consistent spacing between them.*/
+.gallery {
+    display: flex;
+    gap: 40px;
+}
+
+/* Sets the display mode to Flexbox using "display: flex", enabling a flexible layout for the child elements.
+     Arranges the child elements in a vertical stack with "flex-direction: column".
+     Adds a 20px gap between the child elements, providing consistent spacing.*/
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/*  Sets the image to fully occupy the width and height of its container with "width: 100%" and "height: 100%".
+     Applies a 5px border-radius to give the image rounded corners for a softer appearance.
+     Ensures the image maintains its aspect ratio while filling the container using "object-fit: cover".
+     Adds 40px padding at the bottom, likely to space the image from other content.
+     Changes the cursor to a pointer, indicating interactivity (e.g., hover or click).
+     Adds a grayscale filter to make the image appear in black-and-white initially.
+     Uses WebKit-specific properties (-webkit-filter and -webkit-transition) to ensure compatibility with WebKit browsers.
+     Applies a smooth transition effect (1.8 seconds) for any property changes, such as hover interactions, making them visually appealing.*/
+.photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    padding-bottom: 40px;
+    cursor: pointer;
+    filter:  gray;
+    -webkit-filter:  grayscale(1);
+    -webkit-transition: all 1.8s ease-in-out;   
+}
+
+/* Styles for images inside the photo class when hovered:
+     Removes any applied filter, restoring the image to its original appearance with "filter: none".
+     Disables the grayscale effect by setting "-webkit-filter: grayscale(0)" for WebKit browsers.
+     Resets the image scaling to its original size with "-webkit-transform: scale(1.0)", ensuring it remains unchanged. */
+.photo img:hover {
+    filter:  none;
+   -webkit-filter:  grayscale(0);
+   -webkit-transform:  scale(1.0);
+}

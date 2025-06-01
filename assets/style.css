@@ -354,6 +354,7 @@ h2 {
     cursor: pointer;
     filter:  gray;
     -webkit-filter:  grayscale(1);
+    -webkit-transform:  scale(1);
     -webkit-transition: all 1.8s ease-in-out;   
 }
 
@@ -364,7 +365,7 @@ h2 {
 .photo img:hover {
     filter:  none;
    -webkit-filter:  grayscale(0);
-   -webkit-transform:  scale(1.2);
+   -webkit-transform:  scale(1.05);
 }
 
 

@@ -365,7 +365,7 @@ h2 {
 .photo img:hover {
     filter:  none;
    -webkit-filter:  grayscale(0);
-   -webkit-transform:  scale(1.05);
+   -webkit-transform:  scale(1.04);
 }
 
 

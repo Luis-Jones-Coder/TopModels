@@ -355,7 +355,7 @@ h2 {
     filter:  gray;
     -webkit-filter:  grayscale(1);
     -webkit-transform:  scale(1);
-    -webkit-transition: all 1.8s ease-in-out;   
+    -webkit-transition: all 1.2s ease-in-out;   
 }
 
 /* Styles for images inside the photo class when hovered:
